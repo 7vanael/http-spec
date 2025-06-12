@@ -41,7 +41,7 @@
 
   (it "-x argument prints configuration without starting server"
     (let [output (output-from-server "-x")]
-      (should-contain "Example Server" output)
+      (should-contain "Challenge Server" output)
       (should-contain "Running on port: 80" output)
       (should-contain (str "Serving files from: " (.getCanonicalPath (io/file "."))) output)))
 
